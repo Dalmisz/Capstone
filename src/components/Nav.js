@@ -1,9 +1,20 @@
+import img1 from './images/logo.jpg';
 import React from "react";
+
 
 function Nav() {
     return (
-        <nav>
-            <ul>
+        <div className='navbar'>
+            <a href="/" className='logo'>
+                <img src={img1} alt="Logo of the Little Lemon Restaurant" className='img-1'></img>
+            </a>
+
+            <div className='menu-icon'>
+                <div className='bar'></div>
+                <div className='bar'></div>
+                <div className='bar'></div>
+            </div>
+            <ul className='list-items'>
                 <li>
                     <a href="">Home</a>
                 </li>
@@ -23,7 +34,7 @@ function Nav() {
                     <a href="">Log in</a>
                 </li>
             </ul>
-        </nav>
+        </div>
     );
 }
 

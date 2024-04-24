@@ -1,5 +1,6 @@
 import img1 from './images/logo.jpg';
 import React from "react";
+import { Link } from 'react-router-dom';
 
 
 function Nav() {
@@ -8,7 +9,6 @@ function Nav() {
             <a href="/" className='logo'>
                 <img src={img1} alt="Logo of the Little Lemon Restaurant" className='img-1'></img>
             </a>
-
             <div className='menu-icon'>
                 <div className='bar'></div>
                 <div className='bar'></div>
@@ -16,22 +16,22 @@ function Nav() {
             </div>
             <ul className='list-items'>
                 <li>
-                    <a href="">Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <a href="">About</a>
+                    <Link to="/about">About</Link>
                 </li>
                 <li>
-                    <a href="">Menu</a>
+                    <Link to="/menu">Menu</Link>
                 </li>
                 <li>
-                    <a href="">Reservations</a>
+                    <Link to="/reservations">Reservations</Link>
                 </li>
                 <li>
-                    <a href="">Order Online</a>
+                    <Link to="/orderonline">Order Online</Link>
                 </li>
                 <li>
-                    <a href="">Log in</a>
+                    <Link to="/login">Log in</Link>
                 </li>
             </ul>
         </div>

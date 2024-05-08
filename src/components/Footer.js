@@ -1,5 +1,6 @@
 import img1 from './images/logo.jpg'
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -9,12 +10,12 @@ function Footer() {
             </div>
             <div className="doormat">
                 <h3>Doormat Navigation</h3>
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Menu</a>
-                <a href="">Reservatinos</a>
-                <a href="">Order Online</a>
-                <a href="">Log in</a>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/menu">Menu</Link>
+                <Link to="/reservations">Reservations</Link>
+                <Link to="/orderonline">Order Online</Link>
+                <Link to="/login">Log in</Link>
             </div>
             <div className="contact">
                 <h3>Contact</h3>

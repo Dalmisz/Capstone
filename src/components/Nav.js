@@ -25,7 +25,7 @@ function Nav() {
                     <Link to="/menu">Menu</Link>
                 </li>
                 <li>
-                    <Link to="/reservations">Reservations</Link>
+                    <Link to="/booking">Reservations</Link>
                 </li>
                 <li>
                     <Link to="/orderonline">Order Online</Link>
@@ -36,6 +36,6 @@ function Nav() {
             </ul>
         </div>
     );
-}
+};
 
 export default Nav;

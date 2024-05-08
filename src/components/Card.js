@@ -2,13 +2,14 @@ import img3 from './images/greeksalad.jpg';
 import img4 from './images/bruscetta.jpg';
 import img5 from './images/lemondessert.jpg';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Card() {
     return (
         <div className="card">
             <div className="card-header">
                 <h1>This Weeks Specials!</h1>
-                <a href=""><button>Online Menu</button></a>
+                <Link to="/menu" className='button'>Online Menu</Link>
             </div>
             <div className='card-main'>
                 <div className="card-container">
@@ -23,7 +24,7 @@ function Card() {
                         <p>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosmary croutons.</p>
                     </div>
                     <div className="btn">
-                        <a>Order a delivery</a>
+                        <Link to="/menu">Order a delivery</Link>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="96.000000pt" height="96.000000pt" viewBox="0 0 96.000000 96.000000"
                             preserveAspectRatio="xMidYMid meet">
@@ -60,7 +61,7 @@ function Card() {
                         <p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
                     </div>
                     <div className="btn">
-                        <a>Order a delivery</a>
+                        <Link to="/menu">Order a delivery</Link>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="96.000000pt" height="96.000000pt" viewBox="0 0 96.000000 96.000000"
                             preserveAspectRatio="xMidYMid meet">
@@ -98,7 +99,7 @@ function Card() {
                         </p>
                     </div>
                     <div className="btn">
-                        <a>Order a delivery</a>
+                        <Link to="/menu">Order a delivery</Link>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="96.000000pt" height="96.000000pt" viewBox="0 0 96.000000 96.000000"
                             preserveAspectRatio="xMidYMid meet">

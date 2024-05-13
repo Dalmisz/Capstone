@@ -13,8 +13,8 @@ function About() {
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p></div>
             </div>
             <div className='about-img'>
-                <img src={img7} alt="" className='chef-img chef-1'></img>
-                <img src={img8} alt="" className='chef-img chef-2'></img>
+                <img src={img7} alt="Two chefs in the kitchen." className='chef-img chef-1'></img>
+                <img src={img8} alt="Two chefs in the kitchen" className='chef-img chef-2'></img>
             </div>
         </div>
     )

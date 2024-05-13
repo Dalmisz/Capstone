@@ -36,6 +36,10 @@ function BookingForm(props) {
         setDate(newDate);
     }
 
+    const isFormValid = () => {
+        return date && time && guest && occasion; // Check if all fields are filled out
+    }
+
     // Function to fetch available times for a given date
     const fetchAPI = async (date) => {
         // Mocking the API call, replace this with your actual API call
@@ -66,7 +70,7 @@ function BookingForm(props) {
                     <option>Anniversary</option>
                 </select>
                 <div className='btnReceive'>
-                    <input type="submit" aria-label='On Click' value="Make Your reservation" />
+                    <input type="submit" aria-label='On Click' value="Make Your Reservation" disabled={!isFormValid()} />
                 </div>
             </form>
         </div>
